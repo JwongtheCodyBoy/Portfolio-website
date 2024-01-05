@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Wong</title>
+    <link rel="icon" href="images/xun logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
+    <style>
+        model-viewer{
+            width: 500px;
+            height: 375px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><img src="images/xun logo.png" class="logo"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links"> Projects </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://www.linkedin.com/in/jonathan-wong-137a39249/" class="navbar__links" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://github.com/JwongtheCodyBoy" class="navbar__links" target="_blank"> <i class="fab fa-github"></i> </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="Portfolio Resume.pdf" target="_blank" class="button"> Resume </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home">
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>JONATHAN WONG</h1>
+                    <h2>Another student looking for a job</h2>
+                    <p>A Computer Engineering sophomore at the University of South Florida. My current intrests are in game design and robots. However, I am open to anything and have a passion in solving seemingly complex problems with simple solutions</p>
+                    <button class="main__btn" onclick="window.open('Portfolio Resume.pdf', '_blank')"><a href="/">My Resume</a></button>
+                </div>
+                <div class="main__model--container">
+                    <model-viewer src="model/MyChicken.glb" camera-controls auto-rotate rotation-per-second="35deg" ></model-viewer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="projects">
+            <h1> Projects </h1>
+            <div class="projects__container">
+                <a href="https://github.com/JwongtheCodyBoy/Greg_the_Game" class="projects__card" target="_blank">
+                    <h2>Greg the Game</h2>
+                    <p>A First Person Shooter and Platformer</p>
+                    <button>Click to see Source Code</button>
+                </a>
+                <a href="https://github.com/JwongtheCodyBoy/Where_did_we_go_wrong" class="projects__card" target="_blank">
+                    <h2>Where Did we go Wrong</h2>
+                    <p>Over top turn based horor game</p>
+                    <button>Click to see Source Code and Game link</button>
+                </a>
+                <a href="https://github.com/JwongtheCodyBoy/portfolio_website" class="projects__card" target="_blank">
+                    <h2>Portfolio Website</h2>
+                    <p>The glorious page you see now</p>
+                    <button>Click to see Source Code</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__links--items">
+                    <h2>More Info</h2>
+                    <a href="Portfolio Resume.pdf" target="_blank">My Resume</a>
+                    <a href="https://zexoria.itch.io/" target="_blank">Itch.io</a>
+                    <a href="https://www.youtube.com/@JonathanWong-jq5uj" target="_blank">YouTube</a>
+                    <a href="https://github.com/JwongtheCodyBoy" target="_blank">GitHub</a>
+                </div>
+                <div class="footer__links--items">
+                    <h2>Contact Me</h2>
+                    <a href="https://www.linkedin.com/in/jonathan-wong-137a39249/" target="_blank">LinkedIn</a>
+                    <a href="mailto:jcwong@usf.edu">Email</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__links--items">
+                    <h2>Placeholder</h2>
+                    <a href="/">Three</a>
+                    <a href="/">Columns</a>
+                    <a href="/">Look</a>
+                    <a href="/">Nicer</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="#home" id="footer__logo"><img src="images/xun logo.png" class="logo"></a>
+                </div>
+                <p class="website__rights">Looking for an internship. Please hire me.</p>
+                <div class="social__icons">
+                    <a href="https://github.com/JwongtheCodyBoy" class="social__icon--link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jonathan-wong-137a39249" class="social__icon--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@JonathanWong-jq5uj" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
