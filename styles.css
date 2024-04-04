@@ -2,11 +2,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: lighter;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media (prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 .navbar{
@@ -68,19 +88,23 @@ html{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 1rem;
     height: 100%;
+    font-size: large;
 }
 
 .navbar__btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 1rem;
+    height: 93%;
     width: 100%;
+    font-size: large;
 }
 
 .button{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,12 +115,12 @@ html{
     border: none;
     outline: none;
     border-radius: 4px;
-    background-color: #c06a24;
+    background-color: #c2b280;
     color:white;
 }
 
 .button:hover{
-    background: #f16363;
+    background: #c06a24;
     transform: scale(1.025);
     transition: 0.1s ease-out;
 }
@@ -200,7 +224,6 @@ html{
     #mobile-menu.is-active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
-
     
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
@@ -223,7 +246,8 @@ html{
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    min-height: 100vh;
+    /* height: 90vh; */
     background-color: #151515;
     z-index: 1;
     width: 100%;
@@ -233,6 +257,7 @@ html{
 
 .main__content h1{
     font-size: 4rem;
+    font-weight: 700;
     background-color: #FFD700;
     background-image: linear-gradient(to top, #c06a24 0%, 	#FFFEB9 100%);
     -webkit-background-clip: text;
@@ -307,6 +332,7 @@ html{
 
 .main__model--container{
     justify-content: center;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -339,33 +365,22 @@ html{
         font-size: 1rem;
     }
 
-    .main__model--container{
-        overflow-x: hidden;
+    model-viewer {
+        width: 250px;
+        height: 300px;
     }
 }
 
-@media screen and (max-width: 480) {
-    .main__content h1{
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
+@media screen and (max-width: 630px){
+    model-viewer {
+        visibility: hidden;
+      }
+}
 
-    .main__content h2{
-        font-size: 2rem;
-    }
-
-    .main__content p{
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
-
+@media screen and (max-width: 480px) {
     .main__btn{
         padding: 12px 36px;
         margin: 2.5rem 0;
-    }
-    
-    .main__model--container{
-        overflow-x: hidden;
     }
 }
 
@@ -380,7 +395,9 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    min-height: 90vh
+
+    /* height: 90vh; */
 }
 
 .projects h1{
@@ -427,6 +444,7 @@ html{
     background-size: cover;
     position: relative;
     color: white;
+    transition-delay: 200ms;
 }
 
 .projects__card:nth-child(3){
@@ -438,6 +456,7 @@ html{
     background-size: cover;
     position: relative;
     color: white;
+    transition-delay: 400ms;
 }
 
 .projects h2{
@@ -465,10 +484,17 @@ html{
     font-size: 1rem;
     cursor: pointer;
 }
+
 .projects__card:hover{
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
+}
+
+.projects__card button:hover{
+    background: #c06a24;
+    transform: scale(1.020);
+    transition: 0.2s ease-out;
 }
 
 @media screen and (max-width: 1300px){
