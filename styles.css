@@ -433,6 +433,7 @@ html{
     background-size: cover;
     position: relative;
     color: white;
+    
 }
 
 .projects__card:nth-child(2){
@@ -485,13 +486,13 @@ html{
     cursor: pointer;
 }
 
-.projects__card:hover{
+.projects__card_afterShow:hover{
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
 
-.projects__card button:hover{
+.projects__card_afterShow button:hover{
     background: #c06a24;
     transform: scale(1.020);
     transition: 0.2s ease-out;

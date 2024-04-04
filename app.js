@@ -6,11 +6,20 @@ menu.addEventListener('click', function(){
     menuLinks.classList.toggle('active');
 });
 
+function afterShowAni(entries){
+    entries.forEach((entry)=>{
+        entry.target.classList.add('projects__card_afterShow');
+    })
+}
+
 const observer = new IntersectionObserver((entries) =>{
     entries.forEach((entry) => {
         console.log(entry)
         if (entry.isIntersecting){
             entry.target.classList.add('show');
+            setTimeout(function() {
+                afterShowAni(entries);
+            }, 1200);
         }
         // else
         // {
