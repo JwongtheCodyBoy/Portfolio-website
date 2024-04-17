@@ -382,6 +382,14 @@ html{
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+
+    .main__content h1{
+        font-size: 3rem;
+    }
+
+    .main__content p{
+        font-size: 0.8rem;
+    }
 }
 
 
