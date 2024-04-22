@@ -500,6 +500,10 @@ html{
     cursor: pointer;
 }
 
+.projects__card_afterShow:not(:hover) {
+    transition: 0.2s ease-out;
+}
+
 .projects__card_afterShow button:hover{
     background: #c06a24;
     transform: scale(1.020);
