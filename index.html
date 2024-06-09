@@ -6,23 +6,17 @@
     <title>Jonathan Wong</title>
     <link rel="icon" href="images/xun logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
-
-    <style>
-        model-viewer{
-            width: 500px;
-            height: 375px;
-            margin: 50px;
-        }
-    </style>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+        
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar__container">
             <a href="https://jwongthecodyboy.github.io/Portfolio-website/" id="navbar__logo"><img src="images/xun logo.png" class="logo"></a>
+            <div class="navbar__blackbar"></div>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -59,7 +53,7 @@
                     <button class="main__btn" onclick="window.open('Portfolio Resume.pdf', '#_blank')"><a href="/">My Resume</a></button>
                 </div>
                 <div class="main__model--container">
-                    <model-viewer src="model/MyChicken.glb" camera-controls auto-rotate rotation-per-second="35deg" ></model-viewer>
+                    <model-viewer src="model/MyChicken.glb" camera-controls auto-rotate rotation-per-second="35deg" camera-target="0m 0m 0m"  ></model-viewer>
                 </div>
             </div>
         </div>
@@ -71,19 +65,25 @@
             <h1> Highlight Projects  </h1>
             <div class="projects__container">
                 <a href="https://github.com/JwongtheCodyBoy/Greg_the_Game" class="projects__card hidden" target="#_blank">
-                    <h2>Greg the Game</h2>
-                    <p>A First Person Shooter and grapple hook platformer</p>
-                    <button>Click to see Source Code</button>
+                    <div class="projects__text">
+                        <h2>Greg the Game</h2>
+                        <p>A First Person Shooter and grapple hook platformer</p>
+                        <button>Click to see Source Code</button>
+                    </div>
                 </a>
                 <a href="https://github.com/JwongtheCodyBoy/Where_did_we_go_wrong" class="projects__card hidden" target="#_blank">
-                    <h2>Where Did we go Wrong</h2>
-                    <p>Over top turn based horor game</p>
-                    <button>Click to see Source Code and Game link</button>
+                    <div class="projects__text">
+                        <h2>Where Did we go Wrong</h2>
+                        <p>Over top turn based horor game</p>
+                        <button>Click to see Source Code and Game link</button>
+                    </div>
                 </a>
                 <a href="https://github.com/JwongtheCodyBoy/portfolio_website" class="projects__card hidden" target="#_blank">
-                    <h2>Portfolio Website</h2>
-                    <p>The glorious page you see now</p>
-                    <button>Click to see Source Code</button>
+                    <div class="projects__text">
+                        <h2>Portfolio Website</h2>
+                        <p>The glorious page you see now</p>
+                        <button>Click to see Source Code</button>
+                    </div>
                 </a>
             </div>
         </div>
@@ -137,5 +137,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 </body>
 </html>
