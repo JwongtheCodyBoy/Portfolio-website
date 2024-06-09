@@ -175,12 +175,20 @@ body{
     }
 
     .navbar__menu.active{
-        background: #151515;
+        /* background: #151515; */
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: -1;
         font-size: 1.6rem;
+    }
+
+    .navbar__menu-bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #131313;
+        opacity: 0.95;
     }
 
     #navbar__logo{
