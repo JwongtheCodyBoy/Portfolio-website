@@ -52,7 +52,7 @@ body{
 
 .navbar__blackbar{
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 100%;       /* if Want to adjust this go to .navbar to adjust*/
     background-color: #131313;
     z-index: 0;
