@@ -51,7 +51,11 @@ body{
 }
 
 .navbar__blackbar{
-    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;       /* if Want to adjust this go to .navbar to adjust*/
+    background-color: #131313;
+    z-index: 0;
 }
 
 .navbar__container{
@@ -153,15 +157,6 @@ body{
 
         z-index: 1;
         width: 1300px;
-    }
-
-    .navbar__blackbar{
-        display:block;
-        position: absolute;
-        width: 100%;
-        height: 100%;       /* if Want to adjust this go to .navbar to adjust*/
-        background-color:#131313;
-        z-index: 0;
     }
 
     .navbar__menu{
@@ -290,7 +285,8 @@ body{
 }
 
 .main__content h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
     background-color: #f2f7d4;
     background-image: linear-gradient(to top, #f16363 0%, #f2f7d4 100%);
     -webkit-background-clip: text;
