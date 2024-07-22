@@ -51,11 +51,7 @@ body{
 }
 
 .navbar__blackbar{
-    position: absolute;
-    width: 100%;
-    height: 100%;       /* if Want to adjust this go to .navbar to adjust*/
-    background-color: #131313;
-    z-index: 0;
+    display: none;
 }
 
 .navbar__container{
@@ -181,6 +177,15 @@ body{
         transition: all 0.5s ease;
         z-index: -1;
         font-size: 1.6rem;
+    }
+
+    .navbar__blackbar{
+        display:block;
+        position: absolute;
+        width: 100%;
+        height: 100%;       /* if Want to adjust this go to .navbar to adjust*/
+        background-color:#131313;
+        z-index: 0;
     }
 
     .navbar__menu-bg{
