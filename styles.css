@@ -459,7 +459,8 @@ model-viewer{
 .projects__container{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    max-width: 1600px;
 }
 
 .projects__card{
@@ -520,23 +521,7 @@ model-viewer{
     transition: 0.2s ease-out;
 }
 
-@media screen and (max-width: 1300px){
-    .projects{
-        height: 1300px;
-    }
-}
-
-@media screen and (max-width: 862px){
-    .projects{
-        height: 1800px;
-    }
-}
-
 @media screen and (max-width: 480px) {
-    .projects{
-        height: 1700px;
-    }
-
     .projects h1{
         font-size: 4rem;
     }
