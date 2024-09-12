@@ -16,6 +16,8 @@ html{
 
 body{
     background-color: var(--background_color);
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .hidden{
